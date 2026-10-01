@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Running</title>
+  <style>
+    html, body { height: 100%; margin: 0; overflow: hidden; }
+    body {
+      background: #ffffff;
+      color: #000000;
+      font-family: system-ui, sans-serif;
+      font-size: 2rem;
+      position: relative;
+    }
+    .runner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: 0 0;
+      animation: circle 4s linear infinite;
+    }
+    @keyframes circle {
+      from { transform: rotate(0deg)   translateX(30vmin) rotate(0deg); }
+      to   { transform: rotate(360deg) translateX(30vmin) rotate(-360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="runner">running</div>
+</body>
+</html>
